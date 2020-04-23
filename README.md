@@ -1,16 +1,5 @@
 # Calculadora de Salário Líquido
 
-No Brasil, as pessoas que trabalham "com carteira assinada" (CLT) têm uma parte do seu *salário bruto (isto é, o salário integral, sem descontos)* retida pela empresa empregadora para o pagamento de alguns tributos, como, por exemplo, a Previdência Social (INSS) e o Imposto de Renda Retido na Fonte (IRRF). Após esse desconto, o valor que a pessoa contratada recebe é denominado **salário líquido**.
-
-Neste desafio, vamos implementar um algoritmo que será responsável por receber como parâmetro o salário bruto e retornar o salário líquido, já com todos os descontos de INSS e IRRF. Esse algoritmo deve ser implementado na classe **CalculadoraSalario** no método **calcularSalarioLiquido**, esse método deve receber um valor do tipo **double** e retornar um valor do tipo **int** (**Utilize o método Math.round() para arredondar o resultado final**).
-
-Lembre-se que é uma boa prática deixar cada método com apenas 1 responsabilidade, então fique à vontade para criar métodos privados na classe para melhorar a legibilidade de seu algoritmo.
-
-**Observações:**
-Para simplificar o desafio, serão utilizados valores fictícios e não os valores oficiais das tabelas de alíquotas da Previdência Social e Receita Federal.
-
-
-
 ## Fórmula do cálculo
 
 ### Primeiro passo
@@ -44,22 +33,3 @@ Após obter o valor do **salário bruto - INSS**, utilizaremos esse valor como r
 
 **Observações**
 - Caso o valor do salário base recebido seja abaixo do salário mínimo **(R$ 1.039,00)**, o algoritmo deve retornar **0.0**.
-
-## Tópicos
-
-Neste desafio, você aprenderá::
-- Variáveis e métodos;
-- Operadores aritméticos;
-- Operadores lógicos;
-- Controle de fluxo (estrutura condicional).
-
-## Requisitos
-Para este desafio você precisará 
-
-- Java 8++
-
-Para instalar no MacOS, usando o HomeBrew basta executar:
-
-    brew cask install java
-
-Para instalar no Linux e no Windows, confira os links na seção de conteúdo.
